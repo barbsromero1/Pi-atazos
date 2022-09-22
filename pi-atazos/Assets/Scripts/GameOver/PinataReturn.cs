@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PinataReturn : MonoBehaviour
 {
-    private ObjectPool objectPool; 
-
+    private ObjectPool objectPool;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,17 +22,27 @@ public class PinataReturn : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        Debug.Log("ORIGINAL on Collision");
+        //if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        //{
+        //    Debug.Log("Return");
+        //    OnDisablePinata();
+        //}
+        if (collision.gameObject.tag == "Bat")
         {
-            Debug.Log("Return");
-            OnDisablePinata();
+            PinataOnAccion();
         }
     }
 
     virtual public void FindPools()
     {
         objectPool = FindObjectOfType<ObjectPool>();
+    }
+
+    virtual public void PinataOnAccion()
+    {
+        //piñata hace GameOver
     }
 }
