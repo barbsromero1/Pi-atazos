@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8576345635265772888}
   m_Layer: 0
   m_Name: Red
-  m_TagString: Untagged
+  m_TagString: GameOver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,3 +141,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7fe47aba669f974d9ea023664197b4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: {fileID: 0}

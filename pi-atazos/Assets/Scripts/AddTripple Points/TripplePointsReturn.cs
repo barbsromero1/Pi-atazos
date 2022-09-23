@@ -6,6 +6,7 @@ public class TripplePointsReturn : PinataReturn
 {
     private ObjPoolTripplePoints objectPoolDoublePoints;
     private int contColl = 0;
+    private int points = 3;
 
     //find de queu on start but their own pool 
     public override void FindPools()
@@ -25,11 +26,12 @@ public class TripplePointsReturn : PinataReturn
     public override void PinataOnAccion()
     {
         //If the GameObject has the same tag as specified, output this message in the console
-        Debug.Log("BAT");
         contColl += 1;
-        if (contColl == 2)
+        if (contColl == 3)
         {
             OnDisablePinata();
+            //agregar puntos dobles
+            Score.AddScore(points);
             //Regresar el contador a 0 
             contColl = 0;
         }

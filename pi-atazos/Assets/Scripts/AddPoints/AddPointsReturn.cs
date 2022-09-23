@@ -5,6 +5,7 @@ using UnityEngine;
 public class AddPointsReturn : PinataReturn
 {
     private ObjPoolAddPoints objectPoolAddPoints;
+    private int points = 1;
 
     //find de queu on start but their own pool 
     public override void FindPools()
@@ -23,8 +24,9 @@ public class AddPointsReturn : PinataReturn
 
     public override void PinataOnAccion()
     {
-        //If the GameObject has the same tag as specified, output this message in the console
-        Debug.Log("BAT");
         OnDisablePinata();
+        //agregar puntos dobles
+        Score.AddScore(points);
+        //Regresar el contador a 0 
     }
 }

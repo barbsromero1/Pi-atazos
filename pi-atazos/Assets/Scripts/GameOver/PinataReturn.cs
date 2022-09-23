@@ -6,11 +6,13 @@ using UnityEngine;
 public class PinataReturn : MonoBehaviour
 {
     private ObjectPool objectPool;
-    
+    public Score Score;
+
     // Start is called before the first frame update
     void Start()
     {
         FindPools();
+        Score = FindObjectOfType<Score>();
     }
 
     virtual public void OnDisablePinata()
@@ -24,14 +26,15 @@ public class PinataReturn : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("ORIGINAL on Collision");
-        //if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
-        //{
-        //    Debug.Log("Return");
-        //    OnDisablePinata();
-        //}
+        //Regresen a la cola cuando toca el piso 
+        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            OnDisablePinata();
+        }
+        //Si hace collision con el bat que haga su parte cada piñata 
         if (collision.gameObject.tag == "Bat")
         {
+            //método donde esta la acción de cada piñata 
             PinataOnAccion();
         }
     }
@@ -44,5 +47,7 @@ public class PinataReturn : MonoBehaviour
     virtual public void PinataOnAccion()
     {
         //piñata hace GameOver
+        //sonido 
+        //Cambiar a pantalla GameOver 
     }
 }
