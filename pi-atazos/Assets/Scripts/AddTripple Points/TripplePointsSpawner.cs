@@ -4,21 +4,18 @@ using UnityEngine;
 
 public class TripplePointsSpawner : MonoBehaviour
 {
-    public float timeToSpawn = 0.8f;
+    public float timeToSpawn = 1f;
     private float timeSinceSpawn;
     private ObjPoolTripplePoints objectPool;
 
     public Vector3 center;
     public Vector3 size;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        //para encontrar la QUEU de las piñatas
         FindPools();
-    }
+    } 
 
-    // Update is called once per frame
     void Update()
     {
         timeSinceSpawn += Time.deltaTime;

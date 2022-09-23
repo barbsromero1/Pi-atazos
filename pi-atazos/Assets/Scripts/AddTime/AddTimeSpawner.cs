@@ -4,37 +4,46 @@ using UnityEngine;
 
 public class AddTimeSpawner : MonoBehaviour
 {
-    public float timeToSpawn = 0.3f;
+    private float timeToSpawn = 3f;
     private float timeSinceSpawn;
     private ObjPoolAddTime objectPool;
+
+    public TimeManager TimeManager;
+    private float totalTime;
+    private float lastSeconds = 30;
 
     public Vector3 center;
     public Vector3 size;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        //para encontrar la QUEU de las piñatas
         FindPools();
+    }
+
+    private void Start()
+    {
+        totalTime = TimeManager.GetComponent<TimeManager>().timeRemaining;
     }
 
     // Update is called once per frame
     void Update()
     {
         timeSinceSpawn += Time.deltaTime;
-        if (timeSinceSpawn >= timeToSpawn)
+        totalTime -= Time.deltaTime;
+        if (totalTime <= lastSeconds)
         {
-            //random posición de spawn 
-            Vector3 pos = center + new Vector3(1, 10, Random.Range(-size.z, size.z));
-            //sacar piñata del queu
-            GameObject newPinata = objectPool.GetPinata();
-            //nueva posición en la cual saldra
-            newPinata.transform.position = pos;
-            timeSinceSpawn = 0f;
-        }
-        if (Time.deltaTime == 40f)//o puntajje o algo del estilo para aumentar difuciltad 
-        {
-            //timeToSpawn = 0.1f;
+            Debug.Log("Time 30s");
+            //que tan frecuente se lanza cada piñata
+            if (timeSinceSpawn >= timeToSpawn)
+            {
+                //random posición de spawn 
+                Vector3 pos = center + new Vector3(1, 10, Random.Range(-size.z, size.z));
+                //sacar piñata del queu
+                GameObject newPinata = objectPool.GetPinata();
+                //nueva posición en la cual saldra
+                newPinata.transform.position = pos;
+                timeSinceSpawn = 0f;
+            }
         }
     }
 

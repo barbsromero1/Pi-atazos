@@ -6,13 +6,11 @@ using UnityEngine;
 public class PinataReturn : MonoBehaviour
 {
     private ObjectPool objectPool;
-    public Score Score;
+    public TimeManager TimeManager;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         FindPools();
-        Score = FindObjectOfType<Score>();
     }
 
     virtual public void OnDisablePinata()
@@ -20,7 +18,6 @@ public class PinataReturn : MonoBehaviour
         if (objectPool != null)
         {
             objectPool.ReturnPinata(this.gameObject);
-            Debug.Log("ondisable");
         }
     }
 

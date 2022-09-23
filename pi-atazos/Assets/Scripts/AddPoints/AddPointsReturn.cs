@@ -6,6 +6,13 @@ public class AddPointsReturn : PinataReturn
 {
     private ObjPoolAddPoints objectPoolAddPoints;
     private int points = 1;
+    public Score Score;
+
+    private void Awake()
+    {
+        FindPools();
+        Score = FindObjectOfType<Score>();
+    }
 
     //find de queu on start but their own pool 
     public override void FindPools()

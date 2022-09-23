@@ -9,7 +9,7 @@ public class ObjPoolTripplePoints : MonoBehaviour
 
     private Queue<GameObject> pinataPool = new Queue<GameObject>();
 
-    private int poolSrartSize = 8;
+    private int poolSrartSize = 5;
 
     // Start is called before the first frame update
     void Start()

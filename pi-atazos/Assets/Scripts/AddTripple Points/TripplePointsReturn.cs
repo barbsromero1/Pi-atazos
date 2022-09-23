@@ -7,6 +7,13 @@ public class TripplePointsReturn : PinataReturn
     private ObjPoolTripplePoints objectPoolDoublePoints;
     private int contColl = 0;
     private int points = 3;
+    public Score Score;
+
+    private void Awake()
+    {
+        FindPools();
+        Score = FindObjectOfType<Score>();
+    }
 
     //find de queu on start but their own pool 
     public override void FindPools()
