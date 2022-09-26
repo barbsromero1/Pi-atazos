@@ -32,7 +32,6 @@ public class PinataReturn : MonoBehaviour
         //Si hace collision con el bat que haga su parte cada piñata 
         if (collision.gameObject.tag == "Bat")
         {
-            Debug.Log("HFDHJDFHJSD");
             //método donde esta la acción de cada piñata 
             PinataOnAccion();
         }

@@ -93,10 +93,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6347081663814897512}
   - component: {fileID: 6890477023265572831}
-  - component: {fileID: 6890477023265572825}
-  - component: {fileID: 6890477023265572824}
   - component: {fileID: 2965694735027860677}
   - component: {fileID: 2389006942100431407}
+  - component: {fileID: 2473862242224120377}
   m_Layer: 0
   m_Name: pi-ata time
   m_TagString: Untagged
@@ -137,32 +136,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6890477023265572825
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6007394574767838674}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.03, y: 2.53, z: 2.9}
-  m_Center: {x: 0, y: -0.7, z: 0}
---- !u!65 &6890477023265572824
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6007394574767838674}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.94, z: 1.63}
-  m_Center: {x: 0, y: 1.52, z: 1.16}
 --- !u!114 &2965694735027860677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,6 +163,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6890477023265572831}
+--- !u!65 &2473862242224120377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6007394574767838674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.18, y: 4.33, z: 3.51}
+  m_Center: {x: 0, y: 0.15, z: 0.31}
 --- !u!1 &6653661398344023065
 GameObject:
   m_ObjectHideFlags: 0

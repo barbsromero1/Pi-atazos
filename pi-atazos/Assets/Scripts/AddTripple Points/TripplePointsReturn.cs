@@ -26,7 +26,6 @@ public class TripplePointsReturn : PinataReturn
         if (objectPoolDoublePoints != null)
         {
             objectPoolDoublePoints.ReturnPinata(this.gameObject);
-            Debug.Log("ondisable");
         }
     }
 
