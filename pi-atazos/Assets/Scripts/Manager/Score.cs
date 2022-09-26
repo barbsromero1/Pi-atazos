@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
     private int score;
-    public Text highScoreText;
-    public Text scoreText;
+    public TextMeshPro highScoreText;
+    public TextMeshPro scoreText;
 
     // Start is called before the first frame update
     void Start()
