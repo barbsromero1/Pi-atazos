@@ -9,6 +9,7 @@ public class Score : MonoBehaviour
     private int score;
     public TextMeshPro highScoreText;
     public TextMeshPro scoreText;
+    public TextMeshPro scoreTextOver;
 
     // Start is called before the first frame update
     void Start()
@@ -25,5 +26,6 @@ public class Score : MonoBehaviour
             highScoreText.text = score.ToString();
         }
         scoreText.text = score.ToString();
+        scoreTextOver.text = score.ToString();
     }
 }

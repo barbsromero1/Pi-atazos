@@ -10,6 +10,7 @@ public class CanvasManager : MonoBehaviour
 
     public GameObject gaveOverCanvas; 
     public GameObject score_time;
+    public TimeManager TimeM;
 
     // Start is called before the first frame update
     void Start()
@@ -35,10 +36,11 @@ public class CanvasManager : MonoBehaviour
 
     public void GameOver()
     {
+        TimeM.timeRemaining = 0;
+        Time.timeScale = 0;
         gaveOverCanvas.SetActive(true);
         GameIsOver = true;
         score_time.SetActive(false);
-        Time.timeScale = 0;
     }
 
     public void PlayAgain()
