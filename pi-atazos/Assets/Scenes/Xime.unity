@@ -1180,6 +1180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highScoreText: {fileID: 1479930048}
   scoreText: {fileID: 82343010}
+  scoreTextOver: {fileID: 0}
 --- !u!4 &1102962365
 Transform:
   m_ObjectHideFlags: 0

@@ -52,6 +52,6 @@ public class CanvasManager : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Menus");
     }
 }
