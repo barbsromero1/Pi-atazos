@@ -178,7 +178,6 @@ GameObject:
   - component: {fileID: 8221581104376255592}
   - component: {fileID: 8221581104376255606}
   - component: {fileID: 8221581104376255593}
-  - component: {fileID: 8221581104376255607}
   - component: {fileID: -2154802972350047932}
   - component: {fileID: 5782182803182593906}
   m_Layer: 0
@@ -247,22 +246,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.94, z: 1.63}
   m_Center: {x: 0, y: 1.52, z: 1.16}
---- !u!114 &8221581104376255607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9140483865766379847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00205cfd246c52f4f8b8bf57c708520f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pTail: {fileID: 0}
-  pHead: {fileID: 0}
-  move: {x: 0, y: 0, z: 0}
-  move2: {x: 0, y: 0, z: 0}
 --- !u!114 &-2154802972350047932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeManager: {fileID: 0}
+  canvas: {fileID: 0}
   Score: {fileID: 0}
 --- !u!114 &5782182803182593906
 MonoBehaviour:

@@ -24,11 +24,11 @@ public class CanvasManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameIsPaused)
+        if (GameIsPaused || GameIsOver)
         {
             Time.timeScale = 0;
         }
-        if (!GameIsPaused)
+        if (!GameIsPaused || GameIsOver)
         {
             Time.timeScale = 1;
         }
