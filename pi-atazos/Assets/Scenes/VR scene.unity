@@ -1587,7 +1587,7 @@ MonoBehaviour:
     trackingRotationOffset: {x: 90, y: -90, z: 0}
   headConstrain: {fileID: 1040514957}
   headBodyOffest: {x: 0, y: 0, z: 0}
-  turnSmoothness: 0
+  turnSmoothness: 3
 --- !u!4 &754879890 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2834700614314812642, guid: 320b1c2af77554f99a1658df4a6d3d5c, type: 3}

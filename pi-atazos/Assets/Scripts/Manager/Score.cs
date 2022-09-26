@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    private int score; 
+    private int score;
+    public Text highScoreText;
+    public Text scoreText;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +21,8 @@ public class Score : MonoBehaviour
         if (score > PlayerPrefs.GetInt("HighScore", 0))
         {
             PlayerPrefs.GetInt("HighScore", score);
+            highScoreText.text = score.ToString();
         }
+        scoreText.text = score.ToString();
     }
 }
