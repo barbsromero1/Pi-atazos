@@ -179,6 +179,8 @@ GameObject:
   - component: {fileID: 7359461902809178506}
   - component: {fileID: 7359461902809178507}
   - component: {fileID: 7359461902809178505}
+  - component: {fileID: 1195046430698279574}
+  - component: {fileID: 1772904138357392508}
   m_Layer: 0
   m_Name: pi-ata time
   m_TagString: Untagged
@@ -261,3 +263,29 @@ MonoBehaviour:
   pHead: {fileID: 0}
   move: {x: 0, y: 0, z: 0}
   move2: {x: 0, y: 0, z: 0}
+--- !u!114 &1195046430698279574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7702112256434058113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b6d7a6ee973494bb2a44d7ebdab51d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeManager: {fileID: 0}
+--- !u!114 &1772904138357392508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7702112256434058113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852650946a77b4e4fa8fd4c3693893b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 7359461902809178508}

@@ -96,6 +96,8 @@ GameObject:
   - component: {fileID: 8020951027143330735}
   - component: {fileID: 8020951027143330728}
   - component: {fileID: 8020951027143330730}
+  - component: {fileID: 878030450258311234}
+  - component: {fileID: -8245824522338408298}
   m_Layer: 0
   m_Name: pi-ata
   m_TagString: Untagged
@@ -178,6 +180,33 @@ MonoBehaviour:
   pHead: {fileID: 0}
   move: {x: 0, y: 0, z: 0}
   move2: {x: 0, y: 0, z: 0}
+--- !u!114 &878030450258311234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7174601064147318524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f56203b95cd71f14db5295ea8155e7a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeManager: {fileID: 0}
+  Score: {fileID: 0}
+--- !u!114 &-8245824522338408298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7174601064147318524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852650946a77b4e4fa8fd4c3693893b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 8020951027143330729}
 --- !u!1 &7825371470103617335
 GameObject:
   m_ObjectHideFlags: 0
