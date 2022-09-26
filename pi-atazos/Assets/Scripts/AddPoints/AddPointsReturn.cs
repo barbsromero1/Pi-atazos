@@ -25,7 +25,6 @@ public class AddPointsReturn : PinataReturn
         if (objectPoolAddPoints != null)
         {
             objectPoolAddPoints.ReturnPinata(this.gameObject);
-            Debug.Log("ondisable");
         }
     }
 

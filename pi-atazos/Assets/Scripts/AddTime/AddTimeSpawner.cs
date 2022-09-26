@@ -43,7 +43,7 @@ public class AddTimeSpawner : MonoBehaviour
                 if (timeSinceSpawn >= timeToSpawn)
                 {
                     //random posición de spawn 
-                    Vector3 pos = center + new Vector3(-0.5f, 5, Random.Range(-size.z, size.z));
+                    Vector3 pos = center + new Vector3(-2.8f, 6, Random.Range(-size.z, size.z));
                     //sacar piñata del queu
                     GameObject newPinata = objectPool.GetPinata();
                     //nueva posición en la cual saldra

@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/environment.unity
     guid: 11ffbe4131f98134e9593cf08791b77e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/VR scene.unity
     guid: a4004fe5c2565034f86621c8eff908b2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pantalla Pausa.unity
     guid: fc0894e4ceccae446957c5178f221ce6
   - enabled: 0
