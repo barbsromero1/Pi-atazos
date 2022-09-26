@@ -39,7 +39,6 @@ public class Spawner : MonoBehaviour
                 timeSinceSpawn = 0f;
             }
         }
-        
     }
 
     virtual public void FindPools()

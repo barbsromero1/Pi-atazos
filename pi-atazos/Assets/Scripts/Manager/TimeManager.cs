@@ -7,6 +7,8 @@ public class TimeManager : MonoBehaviour
 {
     public float timeRemaining = 90;
     public bool timeIsRunning = false;
+
+    public CanvasManager canvas; 
     //public Text timeText; 
 
     private void Start()
@@ -21,7 +23,6 @@ public class TimeManager : MonoBehaviour
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
-                
                 DisplayTime(timeRemaining);
             }
             else
@@ -29,6 +30,10 @@ public class TimeManager : MonoBehaviour
                 timeRemaining = 0;
                 timeIsRunning = false; 
             }
+        }
+        else
+        {
+            canvas.GameOver(); 
         }
     }
     void DisplayTime(float timeToDisplay)

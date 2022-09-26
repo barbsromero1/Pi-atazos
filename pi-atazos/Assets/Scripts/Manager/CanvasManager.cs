@@ -1,15 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CanvasManager : MonoBehaviour
 {
     public bool GameIsPaused;
+    public bool GameIsOver;
+
+    public GameObject gaveOverCanvas; 
+    public GameObject score_time;
 
     // Start is called before the first frame update
     void Start()
     {
         GameIsPaused = false; 
+        GameIsOver = false;
+        gaveOverCanvas.SetActive(false);
+        score_time.SetActive(true);
     }
 
     // Update is called once per frame
@@ -18,12 +26,29 @@ public class CanvasManager : MonoBehaviour
         if (GameIsPaused)
         {
             Time.timeScale = 0;
-            Debug.Log("Pause"); 
         }
         if (!GameIsPaused)
         {
             Time.timeScale = 1;
-            Debug.Log("UnPause");
         }
+    }
+
+    public void GameOver()
+    {
+        gaveOverCanvas.SetActive(true);
+        GameIsOver = true;
+        score_time.SetActive(false);
+        Time.timeScale = 0;
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("Re-loaded Scene");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
