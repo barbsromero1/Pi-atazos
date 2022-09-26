@@ -21,7 +21,7 @@ public class Spawner : MonoBehaviour
     {
         FindPools();
         pause = canvasM.GameIsPaused;
-        gameOver = canvasM.GameIsPaused;
+        gameOver = canvasM.GameIsOver;
     }
 
     // Update is called once per frame
@@ -40,6 +40,10 @@ public class Spawner : MonoBehaviour
                 newPinata.transform.position = pos;
                 timeSinceSpawn = 0f;
             }
+        }
+        else
+        {
+            Debug.Log("Game Over Sapawner");
         }
     }
 

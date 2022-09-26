@@ -26,14 +26,11 @@ public class DoublePointsReturn : PinataReturn
         if (objectPoolDoublePoints != null)
         {
             objectPoolDoublePoints.ReturnPinata(this.gameObject);
-            Debug.Log("ondisable");
         }
     }
 
     override public void PinataOnAccion()
     {
-        //If the GameObject has the same tag as specified, output this message in the console
-        Debug.Log("BAT Double");
         contColl += 1;
         if (contColl == 2)
         {

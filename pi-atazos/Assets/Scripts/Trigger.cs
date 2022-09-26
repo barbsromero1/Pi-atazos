@@ -12,11 +12,7 @@ public class Trigger : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
-        {
-            //no suena nada 
-        }
-        else
+        if (collision.gameObject.tag == "Bat")
         {
             audiosource.Play();
         }
@@ -27,5 +23,5 @@ public class Trigger : MonoBehaviour
     {
         audiosource = GetComponent<AudioSource>();
     }
-   
+
 }

@@ -28,7 +28,7 @@ public class CanvasManager : MonoBehaviour
         {
             Time.timeScale = 0;
         }
-        if (!GameIsPaused || GameIsOver)
+        if (!GameIsPaused || !GameIsOver)
         {
             Time.timeScale = 1;
         }
@@ -36,10 +36,11 @@ public class CanvasManager : MonoBehaviour
 
     public void GameOver()
     {
+        GameIsPaused = true;
+        GameIsOver = true;
         TimeM.timeRemaining = 0;
         Time.timeScale = 0;
         gaveOverCanvas.SetActive(true);
-        GameIsOver = true;
         score_time.SetActive(false);
     }
 

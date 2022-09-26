@@ -25,10 +25,10 @@ public class PinataReturn : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
         //Regresen a la cola cuando toca el piso 
-        //if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
-        //{
-        //    OnDisablePinata();
-        //}
+        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            OnDisablePinata();
+        }
         //Si hace collision con el bat que haga su parte cada piñata 
         if (collision.gameObject.tag == "Bat")
         {
@@ -47,6 +47,5 @@ public class PinataReturn : MonoBehaviour
     {
         //Cambiar a pantalla GameOver 
         canvas.GameOver();
-        Debug.Log("PinataOnAccion");
     }
 }

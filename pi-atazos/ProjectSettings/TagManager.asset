@@ -4,12 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - AddPoints
-  - AddDoublePoints
-  - AddTime
-  - GameOver
   - Bat
-  - AddTriplePoints
+  - pinatas
   layers:
   - Default
   - TransparentFX
