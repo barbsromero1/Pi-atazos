@@ -22,7 +22,7 @@ public class DoublePointSpawn : MonoBehaviour
         if (timeSinceSpawn >= timeToSpawn)
         {
             //random posición de spawn 
-            Vector3 pos = center + new Vector3(1, 10, Random.Range(-size.z, size.z));
+            Vector3 pos = center + new Vector3(0, 5, Random.Range(-size.z, size.z));
             GameObject newPinata = objectPool.GetPinata();
             //nueva posición en la cual saldra
             newPinata.transform.position = pos;

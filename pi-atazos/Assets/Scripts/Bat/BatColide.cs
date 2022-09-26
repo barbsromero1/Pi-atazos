@@ -13,28 +13,6 @@ public class BatColide : MonoBehaviour
             Debug.Log("Tagggg GameOver");
 
         }
-        if (collision.gameObject.tag == "AddPoints")
-        {
-            //If the GameObject has the same tag as specified, output this message in the console
-            Debug.Log("Tagggg AddPoints");
-        }
-        if (collision.gameObject.tag == "AddDoublePoints")
-        {
-            //If the GameObject has the same tag as specified, output this message in the console
-            Debug.Log("Tagggg AddDoublePoints");
-            
-        }
-        if (collision.gameObject.tag == "AddTriplePoints")
-        {
-            //If the GameObject has the same tag as specified, output this message in the console
-            Debug.Log("Tagggg AddDoublePoints");
-            
-        }
-        if (collision.gameObject.tag == "AddTime")
-        {
-            //If the GameObject has the same tag as specified, output this message in the console
-            Debug.Log("Tagggg AddTime");
-        }
 
     }
 }
