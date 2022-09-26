@@ -15,5 +15,9 @@ public class Score : MonoBehaviour
     public void AddScore(int pointsToAdd)
     {
         score += pointsToAdd;
+        if (score > PlayerPrefs.GetInt("HighScore", 0))
+        {
+            PlayerPrefs.GetInt("HighScore", score);
+        }
     }
 }
