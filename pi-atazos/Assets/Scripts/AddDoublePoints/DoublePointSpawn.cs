@@ -8,25 +8,33 @@ public class DoublePointSpawn : MonoBehaviour
     private float timeSinceSpawn;
     private ObjPoolingDoublePoints objectPool;
 
+    public bool pause;
+    public CanvasManager canvasM;
+
     public Vector3 center;
     public Vector3 size;
 
     private void Awake()
     {
         FindPools();
+        pause = canvasM.GameIsPaused;
     }
 
     void Update()
     {
-        timeSinceSpawn += Time.deltaTime;
-        if (timeSinceSpawn >= timeToSpawn)
+        if (!pause)
         {
-            //random posición de spawn 
-            Vector3 pos = center + new Vector3(-0.5f, 5, Random.Range(-size.z, size.z));
-            GameObject newPinata = objectPool.GetPinata();
-            //nueva posición en la cual saldra
-            newPinata.transform.position = pos;
-            timeSinceSpawn = 0f;
+            timeSinceSpawn += Time.deltaTime;
+            if (timeSinceSpawn >= timeToSpawn)
+            {
+                //random posición de spawn 
+                Vector3 pos = center + new Vector3(-0.5f, 5, Random.Range(-size.z, size.z));
+                //sacar piñata del queu
+                GameObject newPinata = objectPool.GetPinata();
+                //nueva posición en la cual saldra
+                newPinata.transform.position = pos;
+                timeSinceSpawn = 0f;
+            }
         }
     }
 

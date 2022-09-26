@@ -3564,7 +3564,7 @@ MonoBehaviour:
     trackingRotationOffset: {x: 90, y: -90, z: 0}
   headConstrain: {fileID: 1666172200}
   headBodyOffest: {x: 0, y: 0, z: 0}
-  turnSmoothness: 3
+  turnSmoothness: 4
 --- !u!114 &1224177527
 MonoBehaviour:
   m_ObjectHideFlags: 0
