@@ -5,10 +5,10 @@ using UnityEngine;
 public class Trigger : MonoBehaviour
 {
     AudioSource audiosource;
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    audiosource.Play();
-    //}
+    void Start()
+    {
+        audiosource = GetComponent<AudioSource>();
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -19,9 +19,6 @@ public class Trigger : MonoBehaviour
 
     }
     // Start is called before the first frame update
-    void Start()
-    {
-        audiosource = GetComponent<AudioSource>();
-    }
+    
 
 }
