@@ -29,4 +29,8 @@ public class Score : MonoBehaviour
         scoreTextOver.text = score.ToString();
         Debug.Log("score" + score);
     }
+    void OnDestroy()
+    {
+        PlayerPrefs.Save();
+    }
 }
