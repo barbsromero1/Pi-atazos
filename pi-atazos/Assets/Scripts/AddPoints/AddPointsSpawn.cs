@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AddPointsSpawn : MonoBehaviour
 {
-    private float timeToSpawn = 0.8f;
+    private float timeToSpawn = 1f;
     private float timeSinceSpawn = 0;
     private ObjPoolAddPoints objectPool;
 

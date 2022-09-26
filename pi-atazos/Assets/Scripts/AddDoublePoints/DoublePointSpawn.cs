@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoublePointSpawn : MonoBehaviour
 {
-    public float timeToSpawn = 0.6f;
+    private float timeToSpawn = 1.3f;
     private float timeSinceSpawn;
     private ObjPoolingDoublePoints objectPool;
 

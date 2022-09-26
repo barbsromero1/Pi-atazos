@@ -11,11 +11,11 @@ public class piñatasFall : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.velocity = new Vector3(1, 5, 1);
+        rb.velocity = new Vector3(1, 3, 1);
     }
 
     private void OnEnable()
     {
-        rb.velocity = new Vector3(1, 5, 1);
+        rb.velocity = new Vector3(1, 3, 1);
     }
 }

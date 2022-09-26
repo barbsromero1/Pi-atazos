@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TripplePointsSpawner : MonoBehaviour
 {
-    public float timeToSpawn = 1f;
+    private float timeToSpawn = 1.6f;
     private float timeSinceSpawn;
     private ObjPoolTripplePoints objectPool;
 

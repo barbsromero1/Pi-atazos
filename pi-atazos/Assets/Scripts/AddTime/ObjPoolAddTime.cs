@@ -41,6 +41,5 @@ public class ObjPoolAddTime : MonoBehaviour
     {
         pinataPool.Enqueue(pinata);
         pinata.SetActive(false);
-        Debug.Log("Queu Return");
     }
 }

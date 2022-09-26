@@ -41,6 +41,5 @@ public class ObjPoolTripplePoints : MonoBehaviour
     {
         pinataPool.Enqueue(pinata);
         pinata.SetActive(false);
-        Debug.Log("Queu Return");
     }
 }

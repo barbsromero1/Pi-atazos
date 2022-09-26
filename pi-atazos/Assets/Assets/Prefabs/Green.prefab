@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8545249231246817093}
   - component: {fileID: 3731033636021715510}
   - component: {fileID: 4096655193945372976}
-  - component: {fileID: 3119635485491156703}
+  - component: {fileID: 8435097032464677863}
   m_Layer: 0
   m_Name: Green
   m_TagString: AddDoublePoints
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3731033636021715510}
---- !u!114 &3119635485491156703
+--- !u!114 &8435097032464677863
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -41,6 +41,5 @@ public class ObjPoolingDoublePoints : MonoBehaviour
     {
         pinataPool.Enqueue(pinata);
         pinata.SetActive(false);
-        Debug.Log("Queu Return");
     }
 }

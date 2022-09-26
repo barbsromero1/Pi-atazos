@@ -191,7 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeManager: {fileID: 691350263}
   pause: 0
-  canvasM: {fileID: 0}
+  canvasM: {fileID: 691350264}
   center: {x: 0, y: 0, z: 0}
   size: {x: 1.5, y: 10, z: 0.5}
 --- !u!114 &371291357
